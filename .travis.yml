@@ -3,3 +3,5 @@ script: make
 compiler:
   - clang
   - gcc
+before_script:
+  - sudo apt-get install gmock gtest
