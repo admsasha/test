@@ -1,21 +1,13 @@
-#include <gtest/gtest.h>
-#include "SimpleMath.h"
+#include <set>
+#include <iostream>
 
-TEST( testMath, myCubeTest ) {
-    EXPECT_EQ( 1000, cubic( 10 ) );
+std::set<int> s;
+
+int main (int argc, char* argv[]) {
+    s.insert(1);
+    s.erase(1);
+
+    return 0;
 }
 
-TEST( testMath, myCubeTest2 ) {
-    EXPECT_EQ( 1000, cubic( 10 ) );
-}
 
-TEST( testMath, myCubeTest3 ) {
-//	int *a = new int(10);
-
-    EXPECT_EQ( 1000, cubic( 10 ) );
-}
-
-int main( int argc, char **argv ) {
-    ::testing::InitGoogleTest( &argc, argv );
-    return RUN_ALL_TESTS( );
-}
